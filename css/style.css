@@ -1,0 +1,168 @@
+/* &display=swap&subset=cyrillic-ext */
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+img {
+	vertical-align: top;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	font-size: 16px;
+	/* по умолчанию */
+}
+
+body {
+	line-height: 1;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+/* ***** */
+.four-spans {
+	text-align: center;
+	margin: 0 0 100px 0;
+}
+
+.four-spans span {
+	font-size: 30px;
+	color: rgb(138, 43, 226);
+	display: block;
+	line-height: 60px;
+	background-color: rgb(255, 235, 205);
+	margin: 20px 0 20px auto;
+	max-width: 500px;
+	text-shadow: 80px 10px 3px rgb(243, 102, 243);
+}
+
+
+.inline-div {
+	margin: 0 0 20px 0;
+}
+
+.inline-div div {
+	display: inline-block;
+	max-width: 200px;
+	max-height: 200px;
+	padding: 15px;
+	background-color: rgb(250, 198, 120);
+	font-size: 50px;
+}
+
+/* Для ссылки с текстом "Ссылка", сделать внешний отступ вниз в 30px. При этом ссылка не должна быть шире чем
+ текст в ней. */
+
+.block-link {
+	display: inline-block;
+	background-color: rgb(125, 231, 161);
+	padding: 15px;
+	margin-bottom: 30px;
+}
+
+/* Выстроить 4ре параграфа с тектом в ряд. Ширина каждого не больше чем 100px. Отступ между ними 30px.
+ Отступ от границ до контента 10px */
+.divfourp {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.divfourp .color {
+	color: rgb(43, 92, 226);
+	font-size: 20px;
+}
+
+.divfourp p {
+	display: inline-block;
+	max-width: 100px;
+	background-color: rgb(221, 181, 105);
+	margin: 0 30px 0 0;
+	padding: 10px;
+}
+
+.divfourp p:last-child {
+	margin-right: 0px;
+}
+
+.divfourp_marginbottom {
+	margin-bottom: 50px;
+}
+
+/* Есть 2ва дива с текстом. Нужно нижний "насунуть" на верхний. Отступ от границ до контента 30px */
+.twodivs {
+	margin-bottom: 150px;
+	;
+}
+
+.twodivs div {
+	width: 400px;
+	height: 250px;
+	border-radius: 20px;
+	font-size: 25px;
+	text-align: center;
+	padding: 30px;
+}
+
+.oneblock {
+	background-color: rgb(37, 196, 37);
+}
+
+.secondblok {
+	background-color: rgb(164, 37, 196);
+	margin-left: 200px;
+	margin-top: -100px;
+}
+
+/* Есть спан с большим текстом. Нужно чтобы он был не более 200px по высоте и в нем был вертикальный скрол. */
+.big-span {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.big-span span {
+	display: inline-block;
+	width: 700px;
+	height: 700px;
+	font-size: 35px;
+	background-color: rgb(212, 139, 226);
+	padding: 30px;
+	overflow: auto;
+	border-radius: 20px;
+}
